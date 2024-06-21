@@ -1,0 +1,80 @@
+echo "쉘 명령어 복습을 위한 proc.sh 프로그램 작성"
+echo -e "--------------------------------------\n"
+
+echo "[문제 1]"
+echo -e "사 업 명: 2023 K-Digital Training \n관련기관: 고용노동부, 한국교육기술대학교 직업능력 심사평가원 \n과  정: 빅데이터 분석서비스 개발자과정(NCS) \n훈련기간:  2023.12.26-2024.06.21 \n훈련기관: 스마트 인재개발원 \n담   임: 강규남 연구원"
+
+echo "[문제 2]"
+echo -e "사 업 명: 2023 K-Digital Training \n관련기관: 고용노동부, 한국교육기술대학교 직업능력 심사평가원 \n과  정: 빅데이터 분석서비스 개발자과정(NCS) \n훈련기간:  2023.12.26-2024.06.21 \n훈련기관: 스마트 인재개발원 \n담   임: 강규남 연구원" > business.txt
+
+echo "[문제 3]"
+echo "오늘은 $(date '+%Y-%m-%d')일 입니다."
+
+echo "[문제 4]"
+grep -n inho /etc/passwd
+
+echo "[문제 5]"
+mkdir shdir
+cd shdir
+
+echo "[문제 6]"
+who | wc -l
+
+echo "[문제 7]"
+who > w-file
+
+echo "[문제 8]"
+hostname >> w-file
+
+echo "[문제 9]"
+ls -l ~/ > ls-file
+
+echo "[문제10]"
+env > env-file
+
+echo "[문제11]"
+touch emp-file
+
+echo "[문제12]"
+cp emp-file tmp-file
+
+echo "[문제13]"
+mv emp-file mv-file
+
+echo "[문제14]"
+find /home -empty -exec ls -l {} \; > size-zero
+
+echo "[문제15]"
+history > his-cmd
+
+echo "[문제16]"
+chmod 755 his-cmd
+
+echo "[문제17]"
+sort -r his-cmd > sort-file
+
+echo "[문제18]"
+echo "안녕하세요" > cmp1
+
+echo "[문제19]"
+echo "안녕하세용" > cmp2
+
+echo "[문제20]"
+cmp cmp1 cmp2
+
+echo "[문제21]"
+cp /etc/passwd ~/mypass
+
+echo "[문제22]"
+cut -d : -f 1,6 ~/mypass > ./login-file
+
+echo "[문제23]"
+paste -s cmp1 cmp2
+
+
+echo "[문제28]"
+chmod 755 proc.sh
+
+ln -s ~/proc.sh ~/pr
+
+
